@@ -1,6 +1,11 @@
 package lox;
 //> Appendix II expr
 
+/*
+@Author Lee Scott
+4/10/20
+
+ */
 import java.util.List;
 
 public abstract class Expr {

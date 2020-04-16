@@ -13,6 +13,7 @@ import java.util.List;
 @Author Lee Scott
 @Date 4/9/20
 
+Bassed off http://www.craftinginterpreters.com/
 
  */
 
