@@ -11,12 +11,13 @@ public class GenerateAst {
             System.err.println("Usage: generate_ast <output directory>");
             System.exit(1);
         }
-        String outputDir = args[0];
+        String outputDir = "C:\\Users\\lhs49\\Desktop";
         defineAst(outputDir, "Expr", Arrays.asList(
                 "Assign   : Token name, Expr value",
                 "Binary   : Expr left, Token operator, Expr right",
                 "Grouping : Expr expression",
                 "Literal  : Object value",
+                "Logical  : Expr left, Token operator, Expr right",
                 "Unary    : Token operator, Expr right",
                 "Variable : Token name"
         ));
@@ -24,7 +25,8 @@ public class GenerateAst {
                 "Block      : List<Stmt> statements",
                 "Expression : Expr expression",
                 "Print      : Expr expression",
-                "Var        : Token name, Expr initializer"
+                "Var        : Token name, Expr initializer",
+                "While      : Expr condition, Stmt body"
         ));
     }
     private static void defineAst(
