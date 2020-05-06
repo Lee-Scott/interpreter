@@ -33,5 +33,5 @@ class LoxFunction implements LoxCallable {
         return "<fn " + declaration.name.lexeme + ">";
     }
 
-    
+
 }
